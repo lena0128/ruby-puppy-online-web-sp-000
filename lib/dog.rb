@@ -16,7 +16,7 @@ def self.all
 end
 
 def self.print_all
-  puts @@all[@name]
+  puts @@print_all
 end
 
 def self.clear_all
