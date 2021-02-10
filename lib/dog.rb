@@ -6,6 +6,7 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
+  @all << self
 end
 
 def self.save
@@ -21,10 +22,6 @@ def self.print_all
   @@all.collect do |dog|
     puts dog.name
   end
-end
-
-def self.save
-  @@all << self
 end
 
 end
